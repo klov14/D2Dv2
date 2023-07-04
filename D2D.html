@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru" xml:lang="ru">
+<head>
+<style>
+body {background-color: LightSlateGray;}
+table {background: #6358a0;}
+h2   {color: blue;}
+p    {color: red;}
+
+input[type=submit]
+{
+width:20%;
+background: #742e08;
+font-family:Verdana;
+border:none;
+padding: 10px;
+font-size: 20px;
+border-radius: 5px;
+}
+
+</style>
+
+<meta charset="utf-8">
+
+</head>
+
+
+<body>
+<h2><center>Добро пожаловать на сайт <br> Где вы можете поделиться своим опытом и оставить комментарий!</center></h2>
+<h3><center>Заполните анкету</center></h3>
+
+<form action="/action_page.php" method="get">
+  <label for="name">Имя:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+
+  <label for="number">Телефон:</label><br>
+  <input type="text" id="number" name="number" value=""><br>
+
+  <label for="waiter">Имя официанта/обслуживающего персонала:</label><br>
+  <input type="text" id="waiter" name="waiter" value=""><br>
+
+  <label for="comment">Ваш Комментарий:</label><br>
+  <input type="text" id="comment" name="comment" value=""><br>
+<tr>
+  <td colspan ="2"><input type="submit" value="Отправить"></td>
+</tr>
+</form>
+
+
+<meta charset="utf-8">
+</body>
+</html>

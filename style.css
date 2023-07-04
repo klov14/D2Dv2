@@ -1,0 +1,611 @@
+/*use width percentage to make text in the center and don't touch border*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;/*montserrat for nav*/
+  box-sizing: border-box;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(background-blue.JPG);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Drop down menu for desktop*/
+nav{
+  background: #283747;
+  width: 100%;
+}
+label.logo {
+  color:white;
+  position: static;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 80px;
+  line-height: 70px;
+}
+nav ul {
+  margin: 30px;
+  float:right;
+}
+nav ul li {
+  display: inline-block;
+  margin: -10px 35px;
+}
+nav ul li a {
+  color:white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  padding: 10px;
+  background: #A9B5A4;
+  border-radius: 10px;
+  color:#65F526;
+  transition: 0.2s;
+}
+label.checkbtn{
+  margin-right: 30px;
+  color:red;
+  float: right;
+  line-height:80px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+form{
+  width: 90%;
+  max-width: 600px;
+}
+/*initial positions*/
+.myName{
+  width: 250.5px;
+  text-align: center;
+  margin-bottom: 45px;
+  position: relative;
+}
+.myNumber{
+  width: 250.5px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.myWaiter{
+  margin-bottom: 45px;
+  position: relative;
+}
+.input-group{
+  margin-bottom: 45px;
+  position: relative;
+}
+input[type=text], textarea{
+   width: 100%;
+   padding: 10px;
+   outline: 0;
+   border: 2px solid #fff;
+   color: #fff;
+   background: transparent;
+   font-size: 18px;
+}
+label.main {
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  transition: 0.2s;
+  font-size: 18px;
+}
+button{
+  padding: 10px;
+  outline: none;
+  background: #5c85d6;
+  border: 1px solid#fff;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #85a3e0;
+}
+input:focus~label.main,
+input:valid~label.main,
+textarea:focus~label.main,
+textarea:valid~label.main{
+  top: -35px;
+  font-size: 15px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .input-group .myName .myNumber .myWaiter{
+  flex-basis: 48%;
+}
+.text{
+  font-size: 20px;
+}
+h1, h3, h2, p{
+  text-align: center;
+}
+h1{
+  padding-top: 40px;
+  font-size: 17px;
+  width: 99%;
+  padding: 10px;
+}
+h3{
+  font-size: 14px;
+  width: 99%;
+  padding: 10px;
+}
+#container{
+  max-width: 100%;
+  max-height: 100%;
+}
+.form-wrap{
+  margin: 0px;
+  margin-top: 0px;
+  padding: 100px;
+  background-image: url(Green_back.JPG);
+  background-repeat;
+  background-size:auto;
+
+}
+h2{
+padding-bottom: 80px;
+color:#fff;
+}
+p{
+  font-family: Arial;
+  font-size: 9px
+}
+.myFiles{
+  position: relative;
+  color: white;
+  font-family: Arial;
+}
+input[type=file]
+{
+border: none;
+padding: 5px;
+font-family:Verdana;
+margin-bottom: 15px;
+
+font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+ /*iphone se*/
+@media only screen and (min-width:360px){
+  .hero{
+    width: 100%;
+    height: 90vh;
+    background-image: url(background-blue.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  nav ul li a:hover {
+    color:#65F526;
+
+  }
+  label.logo{
+    font-size: 30px;
+    padding: 0 15px;
+  }
+  nav ul li a {
+    /*text-decoration: none;*/
+    font-size: 16px;
+    color: black;
+  }
+  label.checkbtn{
+    padding: 0px;
+    line-height: 80px;
+    display: block;
+  }
+  nav ul{
+    padding: 0px;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height:35vh;
+    background:  orange;
+    top: 80px;
+    left:-100%;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  nav ul li{
+    margin: 35px 0;
+    display: block;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    top:10%;
+  }
+
+  label.main{
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    font-size: 9px;
+    top: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .form-wrap{
+    background-image: url(Green_back.JPG);
+    margin: 5px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+    justify-content: center;
+    background-repeat;
+    background-size: contain;
+  }
+  input:focus~label.main,
+  input:valid~label.main,
+  textarea:focus~label.main,
+  textarea:valid~label.main{
+    top: -35px;
+    font-size: 10px;
+    padding-bottom: 2px;
+  }
+  h2{
+  padding-bottom: 50px;
+}
+.myName{
+  width: 135.5px;
+}
+.myNumber{
+  width: 135.5px;
+}
+input, textarea{
+   font-size: 10px;
+}
+h3{
+  font
+  font-size: 12px;
+  width: 95%;
+  padding: 10px;
+}
+h1{
+      padding-top: 60px;
+}
+
+@media only screen and (min-width:390px){
+  nav ul{
+    padding: 0px;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height:45vh;
+  }
+}
+
+
+
+
+
+
+/*iphone XR*/
+@media only screen and (min-width:414px){
+  .hero{
+    width: 100%;
+    height: 70vh;
+  }
+  #check:checked ~ ul{
+    top:7%;
+  }
+  nav ul{
+    height:25vh;
+}
+  .myName{
+    width: 160.5px;
+  }
+  .myNumber{
+    width: 160.5px;
+  }
+  input:focus~label.main,
+  input:valid~label.main,
+  textarea:focus~label.main,
+  textarea:valid~label.main{
+    top: -36px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+/*Iphone 12PRo*/
+@media only screen and (min-width:390px){
+  .hero{
+    width: 100%;
+    height: 80vh;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    top:7%;
+  }
+  nav ul{
+    height:27vh;
+}
+  h3{
+    font-size: 14px;
+    width: 95%;
+    padding: 10px;
+  }
+  .myName{
+    width: 160.5px;
+  }
+  .myNumber{
+    width: 160.5px;
+  }
+  input:focus~label.main,
+  input:valid~label.main,
+  textarea:focus~label.main,
+  textarea:valid~label.main{
+    top: -36px;
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+}
+input[type=text], textarea{
+   font-size: 13px;
+}
+h1{
+  width: 90%;
+}
+h3{
+  font
+  font-size: 14px;
+  width: 90%;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*desktop*/
+@media only screen and (min-width:885px){
+  .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background-blue.JPG);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label.logo {
+    color:white;
+    position: static;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 80px;
+    line-height: 70px;
+  }
+  nav ul {
+    margin: 30px;
+    float:right;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  nav ul li a {
+    padding: 20px;
+    color:red;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover {
+    padding: 10px;
+    background: #A9B5A4;
+    border-radius: 10px;
+    color:#65F526;
+    transition: 0.2s;
+  }
+  label.checkbtn{
+    margin-right: 30px;
+    color:red;
+    float: right;
+    line-height:80px;
+    font-size: 30px;
+    cursor: pointer;
+    display:none;
+  }
+  #check{
+    display: none;
+  }
+  nav ul{
+    padding-right:0px;
+    position: absolute;
+    width: 100%;
+    height:35vh;
+    background:  transparent;
+    top: 80px;
+    left:10%;
+    top:-5%;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  nav ul li{
+    margin: 35px 0;
+    display: inline-block;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    top:10%;
+  }
+
+
+
+
+  form{
+    width: 90%;
+    max-width: 600px;
+  }
+
+  /*initial positions*/
+  .myName{
+    width: 270.5px;
+    text-align: center;
+    margin-bottom: 45px;
+    position: relative;
+  }
+  .myNumber{
+    width: 270.5px;
+    margin-bottom: 45px;
+    position: relative;
+  }
+  .myWaiter{
+    margin-bottom: 45px;
+    position: relative;
+  }
+  .input-group{
+    margin-bottom: 45px;
+    position: relative;
+  }
+  input[type=text], textarea{
+     width: 100%;
+     padding: 10px;
+     outline: 0;
+     border: 2px solid #fff;
+     color: #fff;
+     background: transparent;
+     font-size: 18px;
+  }
+  label.main {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: text;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+  button{
+    padding: 10px;
+    outline: none;
+    background: #5c85d6;
+    border: 1px solid#fff;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #85a3e0;
+  }
+  input:focus~label.main,
+  input:valid~label.main,
+  textarea:focus~label.main,
+  textarea:valid~label.main{
+    top: -35px;
+    font-size: 15px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row .input-group .myName .myNumber .myWaiter{
+    flex-basis: 48%;
+  }
+  .text{
+    font-size: 20px;
+  }
+  h1, h3, h2, p{
+    text-align: center;
+  }
+  h1{
+    font-size: 17px;
+    width: 99%;
+    padding: 10px;
+    padding-top: 1px;
+  }
+  h3{
+    font
+    font-size: 14px;
+    width: 99%;
+    padding: 10px;
+  }
+  #container{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .form-wrap{
+    margin: 0px;
+    margin-bottom: 5px;
+
+    padding: 100px;
+    background-image: url(Green_back.JPG);
+    background-repeat;
+    background-size: cover;
+
+  }
+  h2{
+  padding-bottom: 80px;
+  color:#fff;
+  }
+  p{
+    font-family: Arial;
+    font-size: 9px
+  }
+  .myFiles{
+    position: relative;
+    color: white;
+    font-family: Arial;
+  }
+  input[type="file"]
+  {
+  border: none;
+  padding: 5px;
+  font-family:Verdana;
+  margin-bottom: 15px;
+
+  font-size: 10px;
+  }
+
+}

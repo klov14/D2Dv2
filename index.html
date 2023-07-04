@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru" xml:lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f6ade22de2.js" crossorigin="anonymous"></script>
+  <title>Review</title>
+</head>
+
+<body>
+<div id="container">
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa-solid fa-bars"></i></label>
+  <label class="logo">D2D</label>
+  <ul>
+    <li><a href="Terms&Conditions.html">О нас</a></li>
+    <li><a href="#">Продукты</a></li>
+    <li><a href="#">Отзывы</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</nav>
+<section></section>
+  <div class="form-wrap">
+    <h1>Добро пожаловать на страницу отзывовов</h1>
+    <h3>Где вы можете оставить любой коментарий руководству</h3>
+    <div class="hero">
+
+<!--    <form target="_blank" action="thank.html" id="review" method="post">  -->
+<form action="connect.php" method="post">
+<h2>Заполните Анкету</h2>
+<div class="row">
+  <div class="myName">
+      <input type="text" id="name" autocomplete="name" required>
+      <label class="main" for="name"><i class="fa-regular fa-user"></i> Ваше Имя*</label>
+  </div>
+
+  <div class="myNumber">
+      <input type="text" id="number" autocomplete="tel" required>
+      <label class="main" for="number"><i class="fa-solid fa-phone-volume"></i> Мобильный телефон*</label>
+  </div>
+</div>
+
+
+
+<div class="myWaiter">
+    <input type="text" id="waiter">
+    <label class="main" for="name"><i class="fa-solid fa-utensils"></i> Имя Офицанта/Обслуживаещего персонала (Если известно)</label>
+</div>
+<!--             Комментарий           -->
+<div class="input-group">
+    <textarea id="message" rows=8 required></textarea>
+    <label for="message" class="main"><i class="fa-regular fa-comments"></i> Ваш комментарий* </label>
+</div>
+
+
+<div class="myFiles">
+    <input type="file" id="files" accept="image/*,.pdf">
+    <label for="files" class="main" class="btn">Выберите файл:</label>
+</div>
+<button type="submit" onClick=window.window("thank.html");>ОТПРАВИТЬ <i class="fa-regular fa-paper-plane"></i></button>
+<br></br><!--Добавить ссылку на условия пользования -->
+<p>Отправляя данную форму вы соглашаетесь с <a href="Terms&Conditions.html"> условиями пользования</p>
+</form>
+
+
+</div>
+</div>
+</div>
+</body>
